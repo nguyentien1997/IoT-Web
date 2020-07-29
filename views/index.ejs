@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title><%= title %></title>
+	<% include ./layout/head %>
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar">
+			<ul class="list-unstyled components">
+				<div id="content">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<h3>VCJ</h3>
+					</nav>
+				</div>
+				<li class="active">
+					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+					<ul class="collapse list-unstyled" id="homeSubmenu">
+						<li>
+							<a href="#">Home 1</a>
+						</li>
+						<li>
+							<a href="#">Home 2</a>
+						</li>
+						<li>
+							<a href="#">Home 3</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+						class="dropdown-toggle">Pages</a>
+					<ul class="collapse list-unstyled" id="pageSubmenu">
+						<li>
+							<a href="#">Page 1</a>
+						</li>
+						<li>
+							<a href="#">Page 2</a>
+						</li>
+						<li>
+							<a href="#">Page 3</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Portfolio</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<div id="content">
+			<div id="notification">
+				<div class="container-left">
+					data datetime
+				</div>
+				<div class="container-right">
+					<a href="#">
+						Notification
+					</a>
+					<a href="#">
+						Messages
+					</a>
+					<a href="#">
+						Account
+					</a>
+				</div>
+			</div>
+			<div id="box-weather">
+				<div class="box-name">
+					<h4>Weather</h4>
+				</div>
+				<div id="weather">
+					<div id="forecasts">
+						<div class="title">
+							<p>Outside</p>
+						</div>
+						<div class="notification"></div>
+						<div class="weather-container">
+							<div class="weather-icon">
+								<img src="/images/icons-weather/unknown.png" alt="alt-img" />
+							</div>
+							<div class="temperature-value">
+								<p>- °<span>C</span></p>
+							</div>
+							<div class="temperature-desc">
+								<p>-</p>
+							</div>
+							<div class="location">
+								<p>-</p>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<label for="">Temperature</label>
+						<div class="container container--adjust-limit" id="temperature"></div>
+					</div>
+					<div class="box">
+						<label for="">Humidity</label>
+						<div class="container" id="humidity"></div>
+					</div>
+					<div class="box">
+						<label for="">Light level</label>
+						<div class="container" id="light"></div>
+					</div>
+				</div>
+			</div>
+			<div id="box-water">
+				<div class="water col-sm-6">
+					<div class="box-name">
+						<h4>Bình nước</h4>
+					</div>
+					<div class="concentration">
+						<div class="box">
+							<label for="">EC</label>
+							<div class="container" id="ec"></div>
+						</div>
+						<div class="box">
+							<label for="">pH level</label>
+							<div class="container" id="pH"></div>
+						</div>
+					</div>
+				</div>
+				<div class="coral col-sm-6">
+					<div class="box-name">
+						<h4>Bưng sanho</h4>
+					</div>
+					<div class="concentration">
+						<div class="box">
+							<label for="">EC</label>
+							<div class="container" id="ec2"></div>
+						</div>
+						<div class="box">
+							<label for="">pH level</label>
+							<div class="container" id="pH2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="box-device">
+				<div class="water col-sm-3">
+					<div class="box-name">
+						<h4>Device 1</h4>
+					</div>
+					<div class="concentration">
+						<div class="box">
+							<div class="row">
+								<div class="col"><label for="">STATUS</label></div>
+								<div class="col"><label class="text-success"><i
+											class="fas fa-circle mr-2"></i>Online</label></div>
+							</div>
+							<div>
+								<label class="switch m-3">
+									<input class="switch-input" type="checkbox" />
+									<span class="switch-label" data-on="On" data-off="Off"></span>
+									<span class="switch-handle"></span>
+								</label>
+								<label class="switch m-3">
+									<input class="switch-input" type="checkbox" />
+									<span class="switch-label" data-on="Auto" data-off="Manual"></span>
+									<span class="switch-handle"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="coral col-sm-3">
+					<div class="box-name">
+						<h4>Device 2</h4>
+					</div>
+					<div class="concentration">
+						<div class="box">
+							<div class="row">
+								<div class="col"><label for="">STATUS</label></div>
+								<div class="col"><label class="text-success"><i
+											class="fas fa-circle mr-2"></i>Online</label></div>
+							</div>
+							<div>
+								<label class="switch m-3">
+									<input class="switch-input" type="checkbox" />
+									<span class="switch-label" data-on="On" data-off="Off"></span>
+									<span class="switch-handle"></span>
+								</label>
+								<label class="switch m-3">
+									<input class="switch-input" type="checkbox" />
+									<span class="switch-label" data-on="Auto" data-off="Manual"></span>
+									<span class="switch-handle"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="water col-sm-3">
+					<div class="box-name">
+						<h4>Device 3</h4>
+					</div>
+					<div class="concentration">
+						<div class="box">
+							<div class="row">
+								<div class="col"><label for="">STATUS</label></div>
+								<div class="col"><label class="text-success"><i
+											class="fas fa-circle mr-2"></i>Online</label></div>
+							</div>
+							<div>
+								<label class="switch m-3">
+									<input class="switch-input" type="checkbox" />
+									<span class="switch-label" data-on="On" data-off="Off"></span>
+									<span class="switch-handle"></span>
+								</label>
+								<label class="switch m-3">
+									<input class="switch-input" type="checkbox" />
+									<span class="switch-label" data-on="Auto" data-off="Manual"></span>
+									<span class="switch-handle"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="coral col-sm-3">
+					<div class="box-name">
+						<h4>Device 4</h4>
+					</div>
+					<div class="concentration">
+						<div class="box">
+							<div class="row">
+								<div class="col"><label for="">STATUS</label></div>
+								<div class="col"><label class="text-success"><i
+											class="fas fa-circle mr-2"></i>Online</label></div>
+							</div>
+							<div>
+								<label class="switch m-3">
+									<input class="switch-input" type="checkbox" />
+									<span class="switch-label" data-on="On" data-off="Off"></span>
+									<span class="switch-handle"></span>
+								</label>
+								<label class="switch m-3">
+									<input class="switch-input" type="checkbox" />
+									<span class="switch-label" data-on="Auto" data-off="Manual"></span>
+									<span class="switch-handle"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<% include ./layout/script %>
+
+</html>
